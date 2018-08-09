@@ -3,7 +3,12 @@ import React, { Component } from "react";
 class Pokemon extends Component {
   render() {
     const { pokemon } = this.props;
-    console.log(pokemon.pokemons);
+    if (pokemon.pokemons.types && pokemon.pokemons.types[1]) {
+      console.log("has two types");
+    } else {
+      console.log("has one type");
+    }
+    // console.log(pokemon.pokemons);
     return (
       <div>
         <p>Name: {pokemon.pokemons.name}</p>
@@ -11,9 +16,6 @@ class Pokemon extends Component {
         {pokemon.pokemons.sprites && (
           <img src={pokemon.pokemons.sprites.front_default} alt="" />
         )}{" "}
-        {pokemon.pokemons.types && (
-          <p>Type1: {pokemon.pokemons.types[1].type.name}</p>
-        )}
         {pokemon.pokemons.types && (
           <p>Type1: {pokemon.pokemons.types[0].type.name}</p>
         )}
