@@ -11,10 +11,19 @@ class PokemonDisplay extends Component {
   render() {
     const { pokemons } = this.props;
     return (
-      <div className="container">
+      <div className="container z-depth-1">
         <h1 className="col s12 center-align">
           Displaying{" "}
-          <span style={{ color: "red" }}>{pokemons.pokemons.name}</span>
+          <span
+            style={{
+              color: "red",
+              textTransform: "capitalize",
+              textDecoration: "underline",
+              textDecorationColor: "black"
+            }}
+          >
+            {pokemons.pokemons.name}
+          </span>
         </h1>
         <Pokemon pokemon={pokemons} />
       </div>
