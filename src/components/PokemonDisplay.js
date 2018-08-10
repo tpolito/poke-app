@@ -11,8 +11,11 @@ class PokemonDisplay extends Component {
   render() {
     const { pokemons } = this.props;
     return (
-      <div>
-        <h1>Pokemon Display</h1>
+      <div className="container">
+        <h1 className="col s12 center-align">
+          Displaying{" "}
+          <span style={{ color: "red" }}>{pokemons.pokemons.name}</span>
+        </h1>
         <Pokemon pokemon={pokemons} />
       </div>
     );

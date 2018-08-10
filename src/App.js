@@ -1,9 +1,11 @@
 import React, { Component } from "react";
 import "./App.css";
+import "../node_modules/materialize-css/dist/css/materialize.min.css";
+import PokemonDisplay from "./components/PokemonDisplay";
+
+//Redux
 import { Provider } from "react-redux";
 import store from "./store";
-// import { getPokemon } from "./actions/pokemonActions";
-import PokemonDisplay from "./components/PokemonDisplay";
 
 class App extends Component {
   render() {
