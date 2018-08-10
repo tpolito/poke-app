@@ -60,9 +60,14 @@ class Pokemon extends Component {
                   )}{" "}
                 </div>
                 <div className="col s10">
-                  <p>#{pokemon.pokemons.id}</p>
+                  <h4>#{pokemon.pokemons.id}</h4>
                   {pokemon.pokemons.types && (
-                    <p>Typing: {pokemon.pokemons.types[0].type.name}</p>
+                    <h5>
+                      Typing:{" "}
+                      <span style={{ textTransform: "capitalize" }}>
+                        {pokemon.pokemons.types[0].type.name}
+                      </span>
+                    </h5>
                   )}
                 </div>
               </div>

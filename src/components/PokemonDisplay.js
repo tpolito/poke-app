@@ -2,10 +2,12 @@ import React, { Component } from "react";
 import Pokemon from "./Pokemon";
 import { connect } from "react-redux";
 import { getPokemon } from "../actions/pokemonActions";
+import { Link } from "react-router-dom";
 
 class PokemonDisplay extends Component {
   componentDidMount() {
-    this.props.getPokemon();
+    const { id } = this.props.match.params;
+    this.props.getPokemon(id);
   }
 
   render() {
@@ -26,6 +28,7 @@ class PokemonDisplay extends Component {
           </span>
         </h1>
         <Pokemon pokemon={pokemons} />
+        <Link to="/">Back To Landing</Link>
       </div>
     );
   }
