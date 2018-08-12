@@ -1,5 +1,4 @@
 import React, { Component } from "react";
-import { Link } from "react-router-dom";
 
 class Landing extends Component {
   state = {
@@ -15,12 +14,11 @@ class Landing extends Component {
   onChange = e => this.setState({ [e.target.name]: e.target.value });
 
   render() {
-    const { id } = this.state;
     return (
       <div className="container">
         <div className="row">
           <div className="input-field col s8 offset-s2">
-            <h1>Type # Of Pokemon</h1>
+            <h1>Pokemon Lookup</h1>
 
             <form onSubmit={this.onSubmit}>
               <label htmlFor="id">Pokemon Number</label>
@@ -28,9 +26,14 @@ class Landing extends Component {
                 onChange={this.onChange}
                 type="text"
                 name="id"
+                placeholder="124"
+                minLength="1"
                 maxLength="3"
                 required
               />
+              <span className="helper-text">
+                Enter the # of the Pokemon you would like to see
+              </span>
             </form>
           </div>
         </div>
