@@ -1,3 +1,9 @@
+/* Fonts */
+@font-face {
+  font-family: "PokemonGB";
+  src: url(./components/fonts/PokemonGB.ttf) format(ttf);
+}
+
 /* Global Styles Stuff */
 body {
   background-color: lightblue;
@@ -5,6 +11,8 @@ body {
 
 .container {
   background-color: white;
+  top: 50%;
+  left: 50%;
 }
 
 /* Form Styles */

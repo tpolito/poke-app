@@ -3,11 +3,6 @@ import React, { Component } from "react";
 class Pokemon extends Component {
   render() {
     const { pokemon } = this.props;
-    // if (pokemon.pokemons.types && pokemon.pokemons.types[1]) {
-    //   console.log("has two types");
-    // } else {
-    //   console.log("has one type");
-    // }
 
     if (pokemon.pokemons.types && pokemon.pokemons.types[1]) {
       return (
@@ -24,8 +19,7 @@ class Pokemon extends Component {
                     />
                   )}{" "}
                 </div>
-                <div className="col s10">
-                  <h4>#{pokemon.pokemons.id}</h4>
+                <div className="col s4">
                   {pokemon.pokemons.types && (
                     <h5>
                       Typing:{" "}
@@ -38,6 +32,13 @@ class Pokemon extends Component {
                       </span>
                     </h5>
                   )}
+                </div>
+                <div className="col s6">
+                  <h5 style={{ textTransform: "capitalize" }}>
+                    Ability:{" "}
+                    {pokemon.pokemons.abilities &&
+                      pokemon.pokemons.abilities[0].ability.name}
+                  </h5>
                 </div>
               </div>
             </div>
@@ -59,8 +60,7 @@ class Pokemon extends Component {
                     />
                   )}{" "}
                 </div>
-                <div className="col s10">
-                  <h4>#{pokemon.pokemons.id}</h4>
+                <div className="col s4">
                   {pokemon.pokemons.types && (
                     <h5>
                       Typing:{" "}
@@ -69,6 +69,13 @@ class Pokemon extends Component {
                       </span>
                     </h5>
                   )}
+                </div>
+                <div className="col s6">
+                  <h5 style={{ textTransform: "capitalize" }}>
+                    Ability:{" "}
+                    {pokemon.pokemons.abilities &&
+                      pokemon.pokemons.abilities[0].ability.name}
+                  </h5>
                 </div>
               </div>
             </div>

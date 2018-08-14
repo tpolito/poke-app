@@ -25,10 +25,23 @@ class PokemonDisplay extends Component {
             }}
           >
             {pokemons.pokemons.name}
+          </span>{" "}
+          Number #{" "}
+          <span
+            style={{
+              color: "red",
+              textTransform: "capitalize",
+              textDecoration: "underline",
+              textDecorationColor: "black"
+            }}
+          >
+            {pokemons.pokemons.id}
           </span>
         </h1>
         <Pokemon pokemon={pokemons} />
-        <Link to="/">Back To Landing</Link>
+        <Link to="/">
+          <i className="fas fa-arrow-circle-left" /> Back To Landing
+        </Link>
       </div>
     );
   }
