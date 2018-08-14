@@ -1,8 +1,4 @@
 /* Fonts */
-@font-face {
-  font-family: "PokemonGB";
-  src: url(./components/fonts/PokemonGB.ttf) format(ttf);
-}
 
 /* Global Styles Stuff */
 body {
@@ -13,6 +9,17 @@ body {
   background-color: white;
   top: 50%;
   left: 50%;
+}
+h1 {
+  font-family: "Audiowide";
+}
+
+h5 {
+  font-family: "Oswald";
+}
+
+ul {
+  margin: 0 auto;
 }
 
 /* Form Styles */

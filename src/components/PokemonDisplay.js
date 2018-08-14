@@ -1,5 +1,7 @@
 import React, { Component } from "react";
-import Pokemon from "./Pokemon";
+import Pokemon from "./pokemon_info/Pokemon";
+import Moves from "./pokemon_info/Moves";
+
 import { connect } from "react-redux";
 import { getPokemon } from "../actions/pokemonActions";
 import { Link } from "react-router-dom";
@@ -39,6 +41,7 @@ class PokemonDisplay extends Component {
           </span>
         </h1>
         <Pokemon pokemon={pokemons} />
+        <Moves pokemon={pokemons} />
         <Link to="/">
           <i className="fas fa-arrow-circle-left" /> Back To Landing
         </Link>
