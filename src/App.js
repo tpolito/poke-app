@@ -15,10 +15,12 @@ class App extends Component {
       <Provider store={store}>
         <Router>
           <div className="App">
-            <Switch>
-              <Route exact path="/" component={Landing} />
-              <Route exact path="/pokemon/:id" component={PokemonDisplay} />
-            </Switch>
+            <div className="container">
+              <Switch>
+                <Route exact path="/" component={Landing} />
+                <Route exact path="/pokemon/:id" component={PokemonDisplay} />
+              </Switch>
+            </div>
           </div>
         </Router>
       </Provider>

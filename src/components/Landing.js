@@ -18,7 +18,7 @@ class Landing extends Component {
     const randomId = Math.floor(Math.random() * 720);
 
     return (
-      <div className="container">
+      <React.Fragment>
         <div className="row">
           <div className="input-field col s8 offset-s2">
             <h1>Pokemon Lookup</h1>
@@ -47,7 +47,7 @@ class Landing extends Component {
             </Link>
           </div>
         </div>
-      </div>
+      </React.Fragment>
     );
   }
 }

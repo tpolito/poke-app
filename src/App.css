@@ -3,12 +3,12 @@
 /* Global Styles Stuff */
 body {
   background-color: lightblue;
+  background-image: url(https://i.imgur.com/zs4Ls2r.png);
+  background-repeat: repeat;
 }
 
 .container {
   background-color: white;
-  top: 50%;
-  left: 50%;
 }
 h1 {
   font-family: "Audiowide";

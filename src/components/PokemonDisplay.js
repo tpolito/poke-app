@@ -15,7 +15,7 @@ class PokemonDisplay extends Component {
   render() {
     const { pokemons } = this.props;
     return (
-      <div className="container z-depth-1">
+      <div className="row">
         <h1 className="col s12 center-align">
           Displaying{" "}
           <span
@@ -40,11 +40,13 @@ class PokemonDisplay extends Component {
             {pokemons.pokemons.id}
           </span>
         </h1>
-        <Pokemon pokemon={pokemons} />
-        <Moves pokemon={pokemons} />
-        <Link to="/">
-          <i className="fas fa-arrow-circle-left" /> Back To Landing
-        </Link>
+        <div className="row">
+          <Pokemon pokemon={pokemons} />
+          <Moves pokemon={pokemons} />
+          <Link to="/">
+            <i className="fas fa-arrow-circle-left" /> Back To Landing
+          </Link>
+        </div>
       </div>
     );
   }
