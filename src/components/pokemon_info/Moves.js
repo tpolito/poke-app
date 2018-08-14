@@ -3,7 +3,6 @@ import React, { Component } from "react";
 class Moves extends Component {
   render() {
     const { pokemon } = this.props;
-    console.log(pokemon);
     return (
       <div className="row">
         <div className="col s12 m8 offset-m2 16 offset-13">
