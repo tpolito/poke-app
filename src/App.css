@@ -1,5 +1,10 @@
 /* Fonts */
-
+@font-face {
+  font-family: "Pokemon";
+  font-style: normal;
+  src: local("Pokemon"),
+    url(./components/fonts/PokemonSolid.ttf) format("truetype");
+}
 /* Global Styles Stuff */
 body {
   background-color: lightblue;
@@ -11,7 +16,8 @@ body {
   background-color: white;
 }
 h1 {
-  font-family: "Audiowide";
+  /* font-family: "Audiowide"; */
+  font-family: "Pokemon";
 }
 
 h5 {
